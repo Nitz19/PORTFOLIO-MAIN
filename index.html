@@ -32,14 +32,11 @@
     <title>MY PORTFOLIO</title>
   </head>
   <body class="click-trigger">
-    <nav
-      class="navbar d-flex w-100 position-fixed navbar-expand-lg navbar-light bg-transparent"
-    >
+    <nav class="navbar d-flex w-100 position-fixed navbar-expand-lg navbar-light bg-transparent">
       <div class="container">
         <a class="navbar-brand" href="">
           <img  width="40" height="40" src="assets/img/R-removebg-preview.png" alt="icon"> </img>
         </a>
-
         <button
           class="navbar-toggler position-relative collapsed"
           type="button"
@@ -56,7 +53,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Home</a>
+              <a class="nav-link" href="#top">Home</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#about">About</a>
@@ -68,7 +65,7 @@
               <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" target="_blank" href="#">Blog</a>
+              <a class="nav-link"  href="#home">Blog</a>
             </li>
             <li class="nav-item mx-2"> <img  src="assets/dark theme icon/moon.png" id="moon"> </li>
         </ul>
@@ -86,10 +83,18 @@
       </div>
     </nav>
 
+    <section id="top">
+  <div class="BACKDROP" id="pics">
+  <img src="assets/NIGHT/stars.png" id="stars" class="full-screen-img">
+  <img src="assets/NIGHT/mountains_behind.png" id="mountains_behind" class="full-screen-img">
+  <h2 id="nitz">NITZ</h2>
+  <<a href="#home" id="scrolldown">scrolldown</a>>
+  <img src="assets/NIGHT/mountains_front.png" id="mountains_front" class="full-screen-img">
+</div>
+</section>
     <section
       class="home d-flex position-relative align-items-center justify-content-center"
-      id="home"
-    >
+      id="home">
       <div id="particles-js" class="position-absolute"></div>
       <div class="content d-flex flex-wrap flex-row">
         <div class="intro">
@@ -144,7 +149,7 @@
         </div>
       </div>
     </section>
-
+    
     <!-- cdn script js-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"

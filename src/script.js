@@ -21,6 +21,24 @@ icon.onclick = function () {
   }
 };
 
+//parallax
+let starts = document.getElementById('stars');
+let mountains_behind = document.getElementById('mountains_behind');
+let nitz = document.getElementById('nitz');
+let scrolldown = document.getElementById('scrolldown');
+let mountains_front = document.getElementById('mountains_front');
+
+window.addEventListener('scroll',function(){
+  let value = this.window.scrollY;
+  starts.style.left = value + 'px';
+  mountains_behind.style.top = value * 0.5 + 'px';
+  mountains_front.style.top = value * 0 + 'px';
+  //nitz.style.marginRight = value * 4 + 'px';
+  nitz.style.marginTop = value * 1.5 + 'px';
+  scrolldown.style.marginTop = value * 1.5 + 'px';
+
+})
+
 // auto hide navbar click
 $(".click-trigger").click(function () {
   $(".navbar-collapse").collapse("hide");

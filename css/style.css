@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;800;900&display=swap");
-
 :root {
   --display: #f7f7f7;
   --light: #fff;
@@ -13,13 +12,13 @@
 }
 
 .night-theme {
-  --display: #3a3a3a;
-  --light: #585858;
+  --display: linear-gradient(to bottom, #2b1055, #7597de);
+  --light: #2a2255;
   --dark: #0c0230;
-  --danger: #00ccff;
+  --danger: #4aa4bb;
   --primary: #60cefa;
-  --second: #ffffff;
-  --second-light: #383c57;
+  --second: #ecf2f3;
+  --second-light: #383b49;
   --third: #5d8bf4;
   --true: #52e5ff;
 }
@@ -28,6 +27,7 @@ body {
   font-family: "League Spartan";
   background: var(--display);
 }
+
 
 html {
   overflow-x: hidden;
@@ -67,7 +67,70 @@ html::-webkit-scrollbar-thumb {
   margin-right: 20px;
 }
 
-.navbar-toggler {
+.BACKDROP{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section{
+  overflow: hidden;
+}
+
+#nitz{
+  height: 55vh;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-weight: 900;
+  /*right: -350px;*/
+  color: var(--primary);
+  white-space: nowrap;
+  font-size: 10vw;
+  z-index: 9;
+ 
+}
+
+#scrolldown{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background-color: var(--danger);
+  color: var(--primary);
+  font-size: 1.5em;
+  font-weight: 600;
+  z-index: 11;
+  transform: translateY(100px);
+} 
+
+.full-screen-img{
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.BACKDROP img#mountains_front
+{
+  z-index: 10;
+}
+
+.BACKDROP img#mountains_behind
+{
+  z-index: -0
+  ;
+}
+
+.navbar-toggler 
+{
   width: 20px;
   height: 20px;
   transition: 0.5s ease-in-out;
@@ -155,6 +218,7 @@ form .btn {
 .home {
   min-height: 100vh;
   flex-direction: row;
+  position: relative;
 }
 .home #particles-js {
   height: 100%;
