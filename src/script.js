@@ -9,35 +9,34 @@ const typed = new Typed(".typing-text", {
 
 //NightShift
 var icon = document.getElementById("moon");
-var image = document.getElementById("Nitz-img");
+var image = document.getElementById("stars");
 icon.onclick = function () {
   document.body.classList.toggle("night-theme");
   if (document.body.classList.contains("night-theme")) {
     icon.src = "assets/dark theme icon/sun.png";
-    image.src = "assets/img/Dark-Nitz.png";
+    image.src = "assets/NIGHT/stars.png";
   } else {
     icon.src = "assets/dark theme icon/moon.png";
-    image.src = "assets/img/Nitz.jpg";
+    image.src = "assets/NIGHT/sky.png";
   }
 };
 
 //parallax
-let starts = document.getElementById('stars');
-let mountains_behind = document.getElementById('mountains_behind');
-let nitz = document.getElementById('nitz');
-let scrolldown = document.getElementById('scrolldown');
-let mountains_front = document.getElementById('mountains_front');
+let starts = document.getElementById("stars");
+let mountains_behind = document.getElementById("mountains_behind");
+let nitz = document.getElementById("nitz");
+let scrolldown = document.getElementById("scrolldown");
+let mountains_front = document.getElementById("mountains_front");
 
-window.addEventListener('scroll',function(){
+window.addEventListener("scroll", function () {
   let value = this.window.scrollY;
-  starts.style.left = value + 'px';
-  mountains_behind.style.top = value * 0.5 + 'px';
-  mountains_front.style.top = value * 0 + 'px';
+  starts.style.left = value + "px";
+  mountains_behind.style.top = value * 0.5 + "px";
+  mountains_front.style.top = value * 0 + "px";
   //nitz.style.marginRight = value * 4 + 'px';
-  nitz.style.marginTop = value * 1.5 + 'px';
-  scrolldown.style.marginTop = value * 1.5 + 'px';
-
-})
+  nitz.style.marginTop = value * 1.5 + "px";
+  scrolldown.style.marginTop = value * 1.5 + "px";
+});
 
 // auto hide navbar click
 $(".click-trigger").click(function () {
