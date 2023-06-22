@@ -575,47 +575,57 @@ form .btn {
   }
 }
 
-/*LOADER*/
-
-.loader-bg {
-  position: fixed;
-  z-index: 99999;
-  background-color: #171717;
+/*loader*/
+/* Pre-loader CSS */
+.page-loader {
   width: 100%;
-  height: 100%;
-}
-
-#container {
+  height: 100vh;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#container {
-  width: 200px;
-  height: 200px;
-}
-
-@keyframes animation {
-  0% {
-    stroke-dasharray: 1, 98;
-    stroke-dashoffset: -105;
+  background: #272727;
+  z-index: 1000;
+  .txt {
+    color: #666;
+    text-align: center;
+    top: 40%;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    line-height: 1.5;
   }
-  50% {
-    stroke-dasharray: 80, 10;
-    stroke-dashoffset: -160;
+}
+
+/* Spinner animation */
+.spinner {
+  position: relative;
+  top: 35%;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 100%;
+  -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+  animation: sk-scaleout 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
   }
   100% {
-    stroke-dasharray: 1, 98;
-    stroke-dashoffset: -300;
+    -webkit-transform: scale(1);
+    opacity: 0;
   }
 }
 
-#spinner {
-  transform-origin: center;
-  animation-name: animation;
-  animation-duration: 1.2s;
-  animation-timing-function: cubic-bezier(1, 0.4, 0.4, 1);
-  animation-iteration-count: infinite;
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 0;
+  }
 }
