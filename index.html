@@ -32,10 +32,13 @@
     <title>MY PORTFOLIO</title>
   </head>
   <body class="click-trigger">
+    <!-- START LOADER -->
+
+<!-- END LOADER -->
     <nav class="navbar d-flex w-100 position-fixed navbar-expand-lg navbar-light bg-transparent">
       <div class="container">
         <a class="navbar-brand" href="">
-          <img  width="40" height="40" src="assets/img/R-removebg-preview.png" alt="icon"> </img>
+          <img   height="40" src="assets/img/1-removebg-preview.png" alt="icon"> </img>
         </a>
         <button
           class="navbar-toggler position-relative collapsed"
@@ -59,13 +62,13 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link" href="#">Skills</a>
+              <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item mx-2">
               <a class="nav-link" href="#">Projects</a>
             </li>
             <li class="nav-item mx-2">
-              <a class="nav-link"  href="#home">Blog</a>
+              <a class="nav-link"  href="#home">Portfolio</a>
             </li>
             <li class="nav-item mx-2"> <img  src="assets/dark theme icon/moon.png" id="moon"> </li>
         </ul>
@@ -88,7 +91,9 @@
   <img src="assets/NIGHT/sky.png" id="stars" class="full-screen-img">
   <img src="assets/NIGHT/mountains_behind.png" id="mountains_behind" class="full-screen-img">
   <h2 id="nitz">NITZ</h2>
-  <a href="#home" id="scrolldown">scrolldown</a>
+  <a href="#home" id="scrolldown"><span>Scrolldown</span> 
+    <i class="fas fa-arrow-circle-down"></i>
+  </a>
   <img src="assets/NIGHT/mountains_front.png" id="mountains_front" class="full-screen-img">
 </div>
 </section>
@@ -190,7 +195,7 @@
               </p>
             </div>
             <div class="cv-btn d-flex flex-column">
-              <a href="#" class="btn btn-outline-primary">
+              <a href="#skills" class="btn btn-outline-primary">
                 <span>Skills & Abilitties</span>
                 <i class="fas fa-arrow-circle-down"></i>
               </a>
@@ -203,6 +208,73 @@
         </div>
       </div>
       </div>
+      <div class="skills d-flex flex-column" id="skills">
+        <div class="container d-flex flex-column">
+            <div class="title" data-aos="fade-down" data-aos-duration="1000">
+                <h2>
+                    <i class="fas fa-laptop-code"></i>
+                    Skills & Abilitties
+                </h2>
+            </div>
+            <div
+                class="box d-flex flex-column align-items-center justify-content-center"
+                data-aos="fade-left"
+                data-aos-duration="1000">
+                <h3>Front-End Web
+                    <span>Developer</span></h3>
+                <div class="image">
+                    <img draggable="false" src="assets/img/skills/icons8-html-5.svg" alt="HTML5"/>
+                    <img draggable="false" src="assets/img/skills/icons8-css3.svg" alt="CSS3"/>
+                    <img draggable="false" src="assets/img/skills/icons8-javascript.svg" alt="JS"/>
+                    <img
+                        draggable="false"
+                        src="assets/img/skills/icons8-node-js.svg"
+                        alt="Node-JS"/>
+                    <img
+                        draggable="false"
+                        src="assets/img/skills/icons8-bootstrap.svg"
+                        alt="Bootstrap"/>
+                    <img
+                        draggable="false"
+                        src="assets/img/skills/icons8-sublime-text.svg"
+                        alt="Sublime-text"/>
+                    <img
+                        draggable="false"
+                        src="assets/img/skills/icons8-visual-studio.svg"
+                        alt="VSCode"/>
+                    <img draggable="false" src="assets/img/skills/icons8-github.svg" alt="Github"/>
+                    <img draggable="false" src="assets/img/skills/icons8-jquery.svg" alt=""/>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-right" data-aos-duration="1000">
+                <h3>Graphic
+                    <span>Designer</span></h3>
+                <div class="image">
+                    <img draggable="false" src="assets/img/skills/icons8-adobe-photoshop.svg" alt="Figma"/>
+                    <img draggable="false" src="assets/img/skills/icons8-sketch.svg" alt="Sketch"/>
+                </div>
+            </div>
+            <div class="box" data-aos="fade-left" data-aos-duration="1000">
+                <h3>Computer
+                    <span>Gamer</span></h3>
+                <div class="image">
+                    <img
+                        draggable="false"
+                        src="assets/img/skills/icons8-discord.svg"
+                        alt="Discord"/>
+                    <img
+                        draggable="false"
+                        src="assets/img/skills/icons8-twitch.svg"
+                        alt="Twitch"/>
+                    <img
+                        draggable="false"
+                        src="assets/img/skills/icons8-valorant.svg"
+                        alt="Youtube"/>
+                    <img draggable="false" src="assets/img/skills/icons8-league-of-legends.svg" alt="LOL"/>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
     <section>
       <div class="title" data-aos="fade-down" data-aos-duration="1000"></div>
@@ -210,8 +282,11 @@
       <div class="loadmore-btn my-5" data-aos="fade-down">
         <a href="#" class="btn btn-outline-primary">Load More </a>
       </div>
+
+
     </section>
-    
+
+
     <!-- cdn script js-->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
@@ -236,5 +311,8 @@
     <script src="src/particle.js"></script>
     <script src="src/app.js"></script>
     <script src="src/script.js"></script>
+
+
+
   </body>
 </html>

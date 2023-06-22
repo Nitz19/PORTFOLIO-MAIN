@@ -21,6 +21,18 @@ icon.onclick = function () {
   }
 };
 
+//LOADER
+
+$(window).on("load", function () {
+  "use strict";
+
+  var loc = window.location.href,
+    index = loc.indexOf("#");
+
+  if (index > 0) {
+    window.location = loc.substring(0, index);
+  }
+});
 //parallax
 let starts = document.getElementById("stars");
 let mountains_behind = document.getElementById("mountains_behind");
