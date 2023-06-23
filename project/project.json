@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Portfolio Website",
+    "tech": "HTML & CSS",
+    "image": "./assets/img/project/portfolio.png",
+    "desc": "lerem ipsum lorem ipsum lorem ipsum",
+    "links": {
+      "demo": "#",
+      "code": "#"
+    }
+  },
+  {
+    "title": "Portfolio Website",
+    "tech": "HTML, CSS & JS",
+    "image": "./assets/img/project/portfolio.png",
+    "desc": "lerem ipsum lorem ipsum lorem ipsum",
+    "links": {
+      "demo": "#",
+      "code": "#"
+    }
+  },
+  {
+    "title": "Portfolio Website",
+    "tech": "HTML & CSS",
+    "image": "./assets/img/project/portfolio.png",
+    "desc": "lerem ipsum lorem ipsum lorem ipsum",
+    "links": {
+      "demo": "#",
+      "code": "#"
+    }
+  },
+  {
+    "title": "Portfolio Websitee",
+    "tech": "HTML, CSS, JS & BOOTSTRAP",
+    "image": "./assets/img/project/portfolio.png",
+    "desc": "lerem ipsum lorem ipsum lorem ipsum",
+    "links": {
+      "demo": "#",
+      "code": "#"
+    }
+  },
+  {
+    "title": "Portfolio Website",
+    "tech": "HTML, CSS, JS & BOOTSTRAP",
+    "image": "./assets/img/project/portfolio.png",
+    "desc": "This is my first project at. techstacks",
+    "links": {
+      "demo": "#",
+      "code": "https://github.com/Nitz19/PORTFOLIO-MAIN.git"
+    }
+  }
+]

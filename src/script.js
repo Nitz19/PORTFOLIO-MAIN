@@ -37,6 +37,62 @@ window.addEventListener("scroll", function () {
   scrolldown.style.marginTop = value * 1.5 + "px";
 });
 
+//FETCH
+// fetchData API
+async function fetchData(type = "certification") {
+  let response;
+  type === "certification"
+    ? (response = await fetch("certification/certification.json"))
+    : (response = await fetch("project/project.json"));
+  const data = await response.json();
+  return data;
+}
+
+function showProject(project) {
+  let projectContainer = document.querySelector(".project .content");
+  let projectHTML = "";
+  project.slice(0, 90).forEach((project) => {
+    projectHTML += `
+        <div class="cards" >
+    <img draggable="false" src="${project.image}" alt=""/>
+    <div class="desc-content d-flex flex-column text-justify">
+        <div class="tag">
+            <h3>${project.title}</h3>
+            <h5>${project.tech}</h5>
+        </div>
+        <div class="desc">
+            <p>
+            ${project.desc}
+            </p>
+            <div class="btns">
+                <a
+                    href="${project.links.demo}"
+                    class="btn"
+                    target="_blank">
+                    <i class="fas fa-eye"></i>
+                    Demo
+                </a>
+                <a
+                    href="${project.links.code}"
+                    class="btn"
+                    target="_blank">
+                    <i class="fas fa-code"></i>
+                    Code
+                </a>
+            </div>
+        </div>
+    </div>
+</div>`;
+  });
+  projectContainer.innerHTML = projectHTML;
+}
+fetchData("certification").then((data) => {
+  showCertification(data);
+});
+fetchData("project").then((data) => {
+  showProject(data);
+});
+
 // auto hide navbar click
 $(".click-trigger").click(function () {
   $(".navbar-collapse").collapse("hide");
