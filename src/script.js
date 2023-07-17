@@ -8,6 +8,7 @@ const typed = new Typed(".typing-text", {
 });
 
 //NightShift
+
 var icon = document.getElementById("moon");
 var image = document.getElementById("stars");
 icon.onclick = function () {
