@@ -586,7 +586,7 @@ form .btn {
   font-size: 40px;
   padding-top: 120px;
   font-weight: 800;
-  color: var(--light);
+  color: var(--primary);
 }
 .project .container .title i {
   color: var(--danger);
@@ -662,14 +662,16 @@ form .btn {
 }
 .project .container .viewall-btn .btn {
   font-size: 18px;
+  color: var(--primary);
+  border-color: var(--primary);
   text-align: center;
   font-weight: 600;
   margin-bottom: 50px;
 }
 
 .project .container .viewall-btn .btn:hover {
-  background: var(--light);
-  color: var(--dark);
+  background: var(--second);
+  color: var(--light);
 }
 .project .container .viewall-btn .btn:hover i {
   transform: translateX(5px);
