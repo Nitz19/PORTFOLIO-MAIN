@@ -520,8 +520,8 @@ form .btn {
   text-align: center;
 }
 
-.about .skills .container .box span {
-  color: var(--skill);
+.about .skills .container .box h3 span {
+    color: var(--skill);
 }
 
 .about .skills .container .box .image {
@@ -777,3 +777,59 @@ footer .content .socials a.instagram:hover {
     flex-direction: column;
   }
 }
+ 
+/* Skill Tags */
+.skill-tag {
+    display: inline-block;
+    background: var(--skill);
+
+    /* FIX: Make text visible */
+    color: #00114d;
+
+    padding: 12px 18px;
+    margin: 8px;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Dark Mode */
+.night-theme .skill-tag {
+    color: #ffffff;
+}
+
+/* Skills Container */
+.about .skills .container .box .image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+/* Skills Box */
+.about .skills .container .box {
+    border-radius: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    background: var(--second-light);
+    color: var(--true);
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+/* IMPORTANT FIX */
+/* Change your old CSS from:
+.about .skills .container .box span {
+    color: var(--skill);
+}
+*/
+
+/* To this: */
+.about .skills .container .box h3 span {
+    color: var(--skill);
+}
+

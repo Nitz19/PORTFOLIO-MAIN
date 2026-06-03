@@ -1,52 +1,31 @@
 [
   {
     "title": "Portfolio Website",
-    "tech": "HTML & CSS",
+    "tech": "HTML, JS & CSS",
     "image": "./assets/img/project/portfolio.png",
-    "desc": "lerem ipsum lorem ipsum lorem ipsum",
-    "links": {
-      "demo": "#",
-      "code": "#"
-    }
-  },
-  {
-    "title": "Portfolio Website",
-    "tech": "HTML, CSS & JS",
-    "image": "./assets/img/project/portfolio.png",
-    "desc": "lerem ipsum lorem ipsum lorem ipsum",
-    "links": {
-      "demo": "#",
-      "code": "#"
-    }
-  },
-  {
-    "title": "Portfolio Website",
-    "tech": "HTML & CSS",
-    "image": "./assets/img/project/portfolio.png",
-    "desc": "lerem ipsum lorem ipsum lorem ipsum",
-    "links": {
-      "demo": "#",
-      "code": "#"
-    }
-  },
-  {
-    "title": "Portfolio Websitee",
-    "tech": "HTML, CSS, JS & BOOTSTRAP",
-    "image": "./assets/img/project/portfolio.png",
-    "desc": "lerem ipsum lorem ipsum lorem ipsum",
-    "links": {
-      "demo": "#",
-      "code": "#"
-    }
-  },
-  {
-    "title": "Portfolio Website",
-    "tech": "HTML, CSS, JS & BOOTSTRAP",
-    "image": "./assets/img/project/portfolio.png",
-    "desc": "This is my first project at. techstacks",
+    "desc": "My personal Portfolio",
     "links": {
       "demo": "#",
       "code": "https://github.com/Nitz19/PORTFOLIO-MAIN.git"
+    }
+  },
+  {
+    "title": "Graphics Design & Sample Video Edit",
+    "tech": "Canva, Capcut, Descript, Adobe",
+    "image": "./assets/img/project/Canva.png",
+    "desc": "sample works in graphic design",
+    "links": {
+      "demo": "https://canva.link/f40x4aze6wzwr03"
+    }
+  },
+
+  {
+    "title": "Lead Magnet",
+    "tech": "",
+    "image": "./assets/img/project/Lead.png",
+    "desc": "7 - Day Meal Lead Magnet",
+    "links": {
+      "demo": "https://drive.google.com/file/d/1hsOgKPWwJ_guFB2vOabkyiULGjltzUoh/view?usp=sharing"
     }
   }
 ]

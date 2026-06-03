@@ -1,6 +1,6 @@
 // typing text hero
 const typed = new Typed(".typing-text", {
-  strings: ["Front-End Web Developer", "GAMER"],
+  strings: ["Virtual Assistant", "Graphic Designer"],
   loop: true,
   typeSpeed: 55,
   backSpeed: 25,
@@ -78,7 +78,7 @@ function showProject(project) {
                     class="btn"
                     target="_blank">
                     <i class="fas fa-code"></i>
-                    Code
+                    Link
                 </a>
             </div>
         </div>
