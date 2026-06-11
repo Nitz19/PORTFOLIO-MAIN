@@ -1,6 +1,6 @@
 // typing text hero
 const typed = new Typed(".typing-text", {
-  strings: ["Virtual Assistant", "Graphic Designer"],
+  strings: ["General Virtual Assistant", "Social Media Virtual Assistant","GHL Tech"],
   loop: true,
   typeSpeed: 55,
   backSpeed: 25,
